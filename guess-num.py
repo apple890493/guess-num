@@ -1,5 +1,10 @@
 import random
-r = random.randint(1, 100)
+start = input("Please decide a starting number: ")
+end = input("Please decide a ending number: ")
+start = int(start)
+end = int(end)
+
+r = random.randint(start, end)
 count = 0
 while True:
 	count += 1 #count = count + 1 快寫
@@ -14,7 +19,3 @@ while True:
 	elif num < r:
 		print("Smaller than answer!")
 	print("This is count", count, "times!") #不用寫三次進去避免重複性!
-
-
-
-
